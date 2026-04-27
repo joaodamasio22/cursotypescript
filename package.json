@@ -19,6 +19,15 @@
   },
   "homepage": "https://github.com/joaodamasio22/cursotypescript#readme",
   "dependencies": {
+    "eslint": "^10.2.1",
+    "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.59.0",
+    "@typescript-eslint/parser": "^8.59.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "prettier": "^3.8.3"
   }
 }
