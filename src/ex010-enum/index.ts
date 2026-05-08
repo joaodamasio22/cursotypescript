@@ -1,9 +1,18 @@
 enum Cores {
     VERMELHO = 10,
-    VERDE = 20,
-    AZUL = 30
+    AZUL = 20,
+    AMARELO = 30
 }
 
-Cores[1] = 'AMARELO'
-console.log(Cores)
+enum Cores {
+    ROXO = 'ROXO',
+    VERDE = 201,
+    ROSA,
+}
 
+
+function escolherACor(cor: Cores): void {
+    console.log(Cores[cor])
+}
+
+escolherACor(Cores.AZUL)
