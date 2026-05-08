@@ -4,7 +4,7 @@ type Person = {
     sobrenome: string;
     age: Age;
     salary: number;
-    corPref?: string;
+    corPref?: CorPref;
 }
 
 type CorRGB = 'Red' | 'Green' | 'Blue';
@@ -16,7 +16,13 @@ const person: Person = {
     sobrenome: 'Damasio',
     age: 30,
     salary: 5000,
-    corPref: 'Red'
+}
+
+const person2: Person = {
+    name: 'Tatiane',
+    sobrenome: 'Damasio',
+    age: 18,
+    salary: 10_000,
 }
 
 export function escolhaCor(person: Person, cor: CorPref): Person {
@@ -24,4 +30,4 @@ export function escolhaCor(person: Person, cor: CorPref): Person {
 }
 
 console.log(escolhaCor(person, 'Cyan'));
-console.log(person);
+console.log(person2);
