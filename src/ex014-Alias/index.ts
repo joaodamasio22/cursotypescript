@@ -25,9 +25,30 @@ const person2: Person = {
     salary: 10_000,
 }
 
+const person3: Person = {
+    name: 'Maria',
+    sobrenome: 'Damasio',
+    age: 25,
+    salary: 7000,
+}
+
 export function escolhaCor(person: Person, cor: CorPref): Person {
     return { ...person, corPref: cor};
 }
 
-console.log(escolhaCor(person, 'Cyan'));
-console.log(person2);
+export function aumentarSalario(person: Person, aumento: number): Person {
+    return {...person, salary: person.salary + aumento};
+}
+
+export function diminuirSalario(person: Person, desconto: number): Person {
+    return {...person, salary: person.salary - desconto};
+}
+
+export function dobrarSalario(person: Person): Person {
+    return {...person, salary: person.salary * 2};
+}
+
+
+console.log(aumentarSalario(person, 1000));
+console.log(diminuirSalario(person2, 500));
+console.log(dobrarSalario(person3));
